@@ -10,6 +10,7 @@ import { ReactNode, useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { cn } from "@/lib/utils";
 import quarterNote from "@/assets/quarterNote.svg";
+import { MusicSheet } from "../MusicSheet";
 
 const MAJOR = "major";
 const MINOR = "minor";
@@ -61,7 +62,25 @@ export const CicleOfFifths = () => {
           { major: "D", minor: "b", keySignature: "2♯" },
         ]}
       />
-      <KeySignatureImage />
+      <MusicSheet
+        notes={[
+          "C4",
+          "D4",
+          "E4",
+          "F4",
+          "G4",
+          "A4",
+          "B4",
+          "C5",
+          "D5",
+          "E5",
+          "F5",
+          "G5",
+          "A5",
+          "B5",
+          "C6",
+        ]}
+      />
       <p>
         Starting on a C, and using the standard system of tuning for Western
         music (12-tone equal temperament), the sequence is: C, G, D, A, E, B, F♯
